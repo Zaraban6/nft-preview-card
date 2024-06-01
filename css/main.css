@@ -36,28 +36,34 @@ body {
   justify-content: center;
 }
 
+.img-m {
+  width: max(302px, 100%);
+  position: relative;
+  cursor: pointer;
+}
+
 .img-b {
   width: max(302px, 100%);
   display: block;
   background-position: center;
   background-size: cover;
   border-radius: 0.5rem;
-  background-image: url(images/image-equilibrium.jpg);
 }
 
-.img-m {
-  width: 302px;
-  height: 302px;
-  border-radius: 0.5rem;
-  transition: all 1s ease-in;
-}
-
-.img-m:hover {
-  cursor: pointer;
-  background-image: url(images/icon-view.svg);
+.img-m::after {
   background-color: hsla(178, 100%, 50%, 0.5);
-  background-position: center;
-  background-repeat:no-repeat;
+  content: url(/images/icon-view.svg);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.img-m:hover:after {
+  opacity: 1;
 }
 
 .data {
@@ -84,7 +90,7 @@ body {
   padding-bottom: 0px;
 }
 
-#data-h:hover, #user:hover, .img:hover {
+#data-h:hover, #user:hover {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }
