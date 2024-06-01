@@ -52,7 +52,7 @@ body {
 
 .img-m::after {
   background-color: hsla(178, 100%, 50%, 0.5);
-  content: url(/icon-view.svg);
+  content: url(./icon-view.svg);
   position: absolute;
   display: flex;
   align-items: center;
