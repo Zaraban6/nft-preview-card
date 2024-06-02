@@ -34,6 +34,7 @@ body {
   background-color: hsl(216, 50%, 16%);
   flex-wrap: wrap;
   justify-content: center;
+  margin-top:73px;
 }
 
 .img-m {
@@ -58,7 +59,7 @@ body {
   justify-content: center;
   inset: 0;
   opacity: 0;
-  content: url(./images/icon-view.svg) no-repeat;
+  content: url(/images/icon-view.svg) no-repeat;
   transition: all 2s ease-in-out;
 }
 
