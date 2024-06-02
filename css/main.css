@@ -52,13 +52,13 @@ body {
 
 .img-m::after {
   background-color: hsla(178, 100%, 50%, 0.5);
-  content: url(./images/icon-view.svg) no-repeat;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   inset: 0;
   opacity: 0;
+  content: url(./images/icon-view.svg) no-repeat;
   transition: all 2s ease-in-out;
 }
 
