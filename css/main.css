@@ -59,7 +59,7 @@ body {
   justify-content: center;
   inset: 0;
   opacity: 0;
-  content: url(/images/icon-view.svg) no-repeat;
+  content: url(/images/icon-view.svg);
   transition: all 2s ease-in-out;
 }
 
